@@ -9,7 +9,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: t('Trade'),
         href: '/swap',
       },
-      {
+      /*{
         label: t('Earn'),
         href: '/farms',
       },
@@ -36,10 +36,10 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       {
         label: t('Merchandise'),
         href: 'https://merch.pancakeswap.finance/',
-      },
+      },*/
     ],
   },
-  {
+  /*{
     label: 'Business',
     items: [
       {
@@ -55,8 +55,8 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://docs.pancakeswap.finance/ecosystem-and-partnerships/business-partnerships/nft-market-applications',
       },
     ],
-  },
-  {
+  },*/
+  /*{
     label: t('Developers'),
     items: [
       {
@@ -76,8 +76,8 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://pancakeswap.finance/v4',
       },
     ],
-  },
-  {
+  },*/
+  /*{
     label: t('Support'),
     items: [
       {
@@ -93,26 +93,26 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://docs.pancakeswap.finance/',
       },
     ],
-  },
+  },*/
   {
     label: t('About'),
     items: [
       {
-        label: t('Terms Of Service'),
-        href: 'https://pancakeswap.finance/terms-of-service',
+        label: t('Telegram'),
+        href: 'https://t.me/lollipop_community_group',
       },
       {
-        label: t('Blog'),
-        href: 'https://blog.pancakeswap.finance/',
+        label: t('Medium'),
+        href: 'https://medium.com/@lollipopdog',
       },
-      {
+      /*{
         label: t('Brand Assets'),
         href: 'https://docs.pancakeswap.finance/ecosystem-and-partnerships/brand',
-      },
-      {
+      },*/
+      /*{
         label: t('Careers'),
         href: 'https://docs.pancakeswap.finance/team/become-a-chef',
-      },
+      },*/
     ],
   },
 ]

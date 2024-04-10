@@ -1,33 +1,10 @@
-import { SUPPORTED_CHAIN_IDS as IFO_SUPPORTED_CHAINS } from '@pancakeswap/ifos'
-import { ContextApi } from '@pancakeswap/localization'
-import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
-import { SUPPORTED_CHAIN_IDS as POSITION_MANAGERS_SUPPORTED_CHAINS } from '@pancakeswap/position-managers'
-import { SUPPORTED_CHAIN_IDS as PREDICTION_SUPPORTED_CHAINS } from '@pancakeswap/prediction'
+import { ContextApi } from '@pancakeswap/localization';
 import {
-  DropdownMenuItemType,
   DropdownMenuItems,
-  EarnFillIcon,
-  EarnIcon,
   MenuItemsType,
-  MoreIcon,
-  NftFillIcon,
-  NftIcon,
-  PancakeProtectorIcon,
-  ShoppingBasketFilledIcon,
-  ShoppingBasketIcon,
   SwapFillIcon,
-  SwapIcon,
-} from '@pancakeswap/uikit'
-import {
-  FIXED_STAKING_SUPPORTED_CHAINS,
-  LIQUID_STAKING_SUPPORTED_CHAINS,
-  SUPPORT_CAKE_STAKING,
-  SUPPORT_FARMS,
-  SUPPORT_ONLY_BSC,
-} from 'config/constants/supportChains'
-import { getOptionsUrl } from 'utils/getOptionsUrl'
-import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
+  SwapIcon
+} from '@pancakeswap/uikit';
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -69,7 +46,7 @@ const config: (
           label: t('Liquidity'),
           href: '/liquidity',
         },
-        {
+        {/*
           label: t('Perpetual'),
           href: getPerpetualUrl({
             chainId,
@@ -203,16 +180,16 @@ const config: (
         {
           label: t('Activity'),
           href: `${nftsBaseUrl}/activity`,
-        },
+        */},
       ],
     },
-    {
+    {/*
       label: t('v4'),
       href: '/v4',
       showOnMobile: false,
       items: [],
-    },
-    {
+  */},
+    {/*
       label: '',
       href: '/info',
       icon: MoreIcon,
@@ -266,7 +243,7 @@ const config: (
           isMobileOnly: true,
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
-    },
+    */},
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config
